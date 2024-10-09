@@ -81,7 +81,7 @@ class _Open3WidgetState extends State<Open3Widget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 75.0, 0.0, 0.0),
                   child: Text(
-                    'Buy Medicines             at discounted rate',
+                    'Buy Medicines at discounted rate',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.getFont(
                       'Roboto Slab',

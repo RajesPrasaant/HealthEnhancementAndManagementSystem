@@ -8,3 +8,7 @@ export '/lab_results/lab_results_widget.dart' show LabResultsWidget;
 export '/homepage/homepage_widget.dart' show HomepageWidget;
 export '/dietchart/dietchart_widget.dart' show DietchartWidget;
 export '/appoinment/appoinment_widget.dart' show AppoinmentWidget;
+export '/mealpalns/mealpalns_widget.dart' show MealpalnsWidget;
+export '/settings_page/settings_page_widget.dart' show SettingsPageWidget;
+export '/personal_info/personal_info_widget.dart' show PersonalInfoWidget;
+export '/password_reset/password_reset_widget.dart' show PasswordResetWidget;
