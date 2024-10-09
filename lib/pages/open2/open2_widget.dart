@@ -81,7 +81,7 @@ class _Open2WidgetState extends State<Open2Widget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 75.0, 0.0, 0.0),
                   child: Text(
-                    'Keep EHR files             in one place',
+                    'Keep EHR files in one place',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.getFont(
                       'Roboto Slab',
