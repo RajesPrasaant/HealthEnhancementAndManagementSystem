@@ -81,7 +81,7 @@ class _Open1WidgetState extends State<Open1Widget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 75.0, 0.0, 0.0),
                   child: Text(
-                    'Consultation                with a Doctor',
+                    'Consultation with a Doctor',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.getFont(
                       'Roboto Slab',

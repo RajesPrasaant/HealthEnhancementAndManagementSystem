@@ -119,10 +119,10 @@ class _GenderWidgetState extends State<GenderWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 10.0, 0.0, 0.0),
+                                      0.0, 15.0, 0.0, 250.0),
                                   child: Text(
                                     'MALE',
                                     textAlign: TextAlign.center,
@@ -130,6 +130,7 @@ class _GenderWidgetState extends State<GenderWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Inter',
+                                          fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w800,
                                         ),
@@ -137,13 +138,13 @@ class _GenderWidgetState extends State<GenderWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.39),
+                                alignment: const AlignmentDirectional(0.0, 0.34),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
-                                    'assets/images/man-toilet-color-icon.png',
-                                    width: 131.0,
-                                    height: 218.0,
+                                    'assets/images/PngItem_3023907.png',
+                                    width: 126.0,
+                                    height: 200.0,
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -153,26 +154,11 @@ class _GenderWidgetState extends State<GenderWidget> {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: const AlignmentDirectional(-1.0, 0.0),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            50.0, 150.0, 0.0, 0.0),
-                        child: Container(
-                          width: 145.0,
-                          height: 229.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                          ),
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.66, 0.15),
+                alignment: const AlignmentDirectional(0.68, -0.09),
                 child: Padding(
                   padding:
                       const EdgeInsetsDirectional.fromSTEB(50.0, 150.0, 0.0, 0.0),
@@ -189,7 +175,7 @@ class _GenderWidgetState extends State<GenderWidget> {
                           alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 10.0, 0.0, 0.0),
+                                0.0, 15.0, 0.0, 250.0),
                             child: Text(
                               'FEMALE',
                               textAlign: TextAlign.center,
@@ -197,6 +183,7 @@ class _GenderWidgetState extends State<GenderWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Inter',
+                                    fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w800,
                                   ),
@@ -204,13 +191,13 @@ class _GenderWidgetState extends State<GenderWidget> {
                           ),
                         ),
                         Align(
-                          alignment: const AlignmentDirectional(0.0, 0.39),
+                          alignment: const AlignmentDirectional(0.15, 0.3),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
-                              'assets/images/women-toilet-color-icon.png',
-                              width: 131.0,
-                              height: 218.0,
+                              'assets/images/business-woman-icon.png',
+                              width: 126.0,
+                              height: 200.0,
                               fit: BoxFit.cover,
                             ),
                           ),

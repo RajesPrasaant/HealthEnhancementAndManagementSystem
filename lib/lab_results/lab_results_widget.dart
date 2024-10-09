@@ -675,8 +675,8 @@ class _LabResultsWidgetState extends State<LabResultsWidget> {
                         ].divide(const SizedBox(height: 16.0)),
                       ),
                       FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
+                        onPressed: () async {
+                          context.pushNamed('appoinment');
                         },
                         text: 'Request Consultation',
                         options: FFButtonOptions(

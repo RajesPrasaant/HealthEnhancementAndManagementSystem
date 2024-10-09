@@ -124,6 +124,26 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'appoinment',
           path: '/appoinment',
           builder: (context, params) => const AppoinmentWidget(),
+        ),
+        FFRoute(
+          name: 'mealpalns',
+          path: '/mealpalns',
+          builder: (context, params) => const MealpalnsWidget(),
+        ),
+        FFRoute(
+          name: 'settings_page',
+          path: '/settingsPage',
+          builder: (context, params) => const SettingsPageWidget(),
+        ),
+        FFRoute(
+          name: 'personal_info',
+          path: '/personalInfo',
+          builder: (context, params) => const PersonalInfoWidget(),
+        ),
+        FFRoute(
+          name: 'password_reset',
+          path: '/passwordReset',
+          builder: (context, params) => const PasswordResetWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -242,6 +262,7 @@ class FFParameters {
     String paramName,
     ParamType type, {
     bool isList = false,
+    List<String>? collectionNamePath,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -259,6 +280,7 @@ class FFParameters {
       param,
       type,
       isList,
+      collectionNamePath: collectionNamePath,
     );
   }
 }

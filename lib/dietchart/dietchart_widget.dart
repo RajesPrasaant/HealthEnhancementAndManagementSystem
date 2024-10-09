@@ -523,8 +523,8 @@ class _DietchartWidgetState extends State<DietchartWidget> {
                               ),
                         ),
                         FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('mealpalns');
                           },
                           text: 'View Diet Chart',
                           options: FFButtonOptions(
