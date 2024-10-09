@@ -191,7 +191,7 @@ class _GenderWidgetState extends State<GenderWidget> {
                           ),
                         ),
                         Align(
-                          alignment: const AlignmentDirectional(0.15, 0.3),
+                          alignment: const AlignmentDirectional(0.15, 0.22),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
