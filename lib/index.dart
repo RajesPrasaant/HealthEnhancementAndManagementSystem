@@ -7,3 +7,4 @@ export '/pages/gender/gender_widget.dart' show GenderWidget;
 export '/lab_results/lab_results_widget.dart' show LabResultsWidget;
 export '/homepage/homepage_widget.dart' show HomepageWidget;
 export '/dietchart/dietchart_widget.dart' show DietchartWidget;
+export '/appoinment/appoinment_widget.dart' show AppoinmentWidget;

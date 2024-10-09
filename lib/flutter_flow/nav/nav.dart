@@ -119,6 +119,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'dietchart',
           path: '/dietchart',
           builder: (context, params) => const DietchartWidget(),
+        ),
+        FFRoute(
+          name: 'appoinment',
+          path: '/appoinment',
+          builder: (context, params) => const AppoinmentWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
