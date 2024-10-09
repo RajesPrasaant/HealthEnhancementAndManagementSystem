@@ -4,14 +4,14 @@
             "outputFile": "com.mycompany.hems.app-mergeDebugResources-35:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "D:\\HealthEnhancementAndManagementSystem\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "/Users/sudharsanselvam/Documents/SPD/HealthEnhancementAndManagementSystem/android/app/src/main/res/values-night-v31/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "175,829",
+                        "startOffsets": "172,815",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "471,995"
+                        "endOffsets": "464,979"
                     },
                     "to": {
                         "startLines": "2,6",

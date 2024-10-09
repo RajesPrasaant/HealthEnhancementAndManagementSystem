@@ -4,14 +4,14 @@
             "outputFile": "com.mycompany.hems.app-mergeDebugResources-35:/values-v31/values-v31.xml",
             "map": [
                 {
-                    "source": "D:\\HealthEnhancementAndManagementSystem\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "/Users/sudharsanselvam/Documents/SPD/HealthEnhancementAndManagementSystem/android/app/src/main/res/values-v31/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "176,830",
+                        "startOffsets": "173,816",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "472,996"
+                        "endOffsets": "465,980"
                     },
                     "to": {
                         "startLines": "2,6",
