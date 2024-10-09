@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">179513064430</string>
-    <string name="google_api_key" translatable="false">AIzaSyCSoHgwdWS3MqTiDZ_hC5oKV3i1QBsKu1Y</string>
-    <string name="google_app_id" translatable="false">1:179513064430:android:02bc578b0ade836ff32cff</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCSoHgwdWS3MqTiDZ_hC5oKV3i1QBsKu1Y</string>
-    <string name="google_storage_bucket" translatable="false">health-enhancement-app-fxdoqr.appspot.com</string>
-    <string name="project_id" translatable="false">health-enhancement-app-fxdoqr</string>
-</resources>
