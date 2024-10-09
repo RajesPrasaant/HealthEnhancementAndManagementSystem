@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179513064430",
+    "project_id": "health-enhancement-app-fxdoqr",
+    "storage_bucket": "health-enhancement-app-fxdoqr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179513064430:android:02bc578b0ade836ff32cff",
+        "android_client_info": {
+          "package_name": "com.mycompany.hems"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSoHgwdWS3MqTiDZ_hC5oKV3i1QBsKu1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
