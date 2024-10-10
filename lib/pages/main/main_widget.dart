@@ -525,7 +525,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                       }
 
                                                       context.goNamedAuth(
-                                                          'open1',
+                                                          'homepage',
                                                           context.mounted);
                                                     },
                                                     text: 'Sign In',
@@ -716,7 +716,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                                 }
 
                                                                 context.goNamedAuth(
-                                                                    'open1',
+                                                                    'homepage',
                                                                     context
                                                                         .mounted);
                                                               },
@@ -803,7 +803,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                                       }
 
                                                                       context.goNamedAuth(
-                                                                          'open1',
+                                                                          'homepage',
                                                                           context
                                                                               .mounted);
                                                                     },
@@ -1263,43 +1263,8 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      GoRouter.of(context)
-                                                          .prepareAuthEvent();
-                                                      if (_model
-                                                              .passwordCreateTextController
-                                                              .text !=
-                                                          _model
-                                                              .passwordConfirmTextController
-                                                              .text) {
-                                                        ScaffoldMessenger.of(
-                                                                context)
-                                                            .showSnackBar(
-                                                          const SnackBar(
-                                                            content: Text(
-                                                              'Passwords don\'t match!',
-                                                            ),
-                                                          ),
-                                                        );
-                                                        return;
-                                                      }
-
-                                                      final user = await authManager
-                                                          .createAccountWithEmail(
-                                                        context,
-                                                        _model
-                                                            .emailAddressCreateTextController
-                                                            .text,
-                                                        _model
-                                                            .passwordCreateTextController
-                                                            .text,
-                                                      );
-                                                      if (user == null) {
-                                                        return;
-                                                      }
-
-                                                      context.goNamedAuth(
-                                                          'open1',
-                                                          context.mounted);
+                                                      context
+                                                          .pushNamed('open1');
                                                     },
                                                     text: 'Create Account',
                                                     options: FFButtonOptions(
@@ -1432,7 +1397,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                                 }
 
                                                                 context.goNamedAuth(
-                                                                    'open1',
+                                                                    'homepage',
                                                                     context
                                                                         .mounted);
                                                               },
@@ -1519,7 +1484,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                                       }
 
                                                                       context.goNamedAuth(
-                                                                          'open1',
+                                                                          'homepage',
                                                                           context
                                                                               .mounted);
                                                                     },

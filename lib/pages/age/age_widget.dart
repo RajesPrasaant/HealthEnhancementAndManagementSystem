@@ -214,7 +214,9 @@ class _AgeWidgetState extends State<AgeWidget> {
                           ),
                         ),
                         FFButtonWidget(
-                          onPressed: () async {},
+                          onPressed: () {
+                            print('Button pressed ...');
+                          },
                           text: 'Continue',
                           options: FFButtonOptions(
                             width: MediaQuery.sizeOf(context).width * 1.0,

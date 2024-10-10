@@ -120,15 +120,7 @@ class _Open3WidgetState extends State<Open3Widget> {
                     size: 75.0,
                   ),
                   onPressed: () async {
-                    context.pushNamed(
-                      'gender',
-                      extra: <String, dynamic>{
-                        kTransitionInfoKey: const TransitionInfo(
-                          hasTransition: true,
-                          transitionType: PageTransitionType.fade,
-                        ),
-                      },
-                    );
+                    context.pushNamed('homepage');
                   },
                 ),
               ),

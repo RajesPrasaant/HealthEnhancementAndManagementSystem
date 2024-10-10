@@ -110,6 +110,9 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                 topLeft: Radius.circular(32.0),
                                 topRight: Radius.circular(32.0),
                               ),
+                              border: Border.all(
+                                color: const Color(0xFFDED5D5),
+                              ),
                             ),
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
@@ -757,7 +760,9 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                     color: Colors.white,
                     size: 30.0,
                   ),
-                  onPressed: () async {},
+                  onPressed: () async {
+                    context.pushNamed('settings_page');
+                  },
                 ),
               ),
             ),
