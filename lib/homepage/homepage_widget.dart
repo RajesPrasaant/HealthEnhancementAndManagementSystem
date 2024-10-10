@@ -176,11 +176,25 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                             BorderRadius
                                                                 .circular(30.0),
                                                       ),
-                                                      child: const Icon(
-                                                        Icons.favorite,
-                                                        color:
-                                                            Color(0xFFE57373),
-                                                        size: 30.0,
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          context.pushNamed(
+                                                              'blood_request');
+                                                        },
+                                                        child: const Icon(
+                                                          Icons.favorite,
+                                                          color:
+                                                              Color(0xFFE57373),
+                                                          size: 30.0,
+                                                        ),
                                                       ),
                                                     ),
                                                     Text(

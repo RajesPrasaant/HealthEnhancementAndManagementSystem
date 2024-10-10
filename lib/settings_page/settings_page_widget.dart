@@ -45,7 +45,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
             children: [
               Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
-                height: 200.0,
+                height: 88.0,
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFFE0F7FA), Color(0xFF39D2C0)],

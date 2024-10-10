@@ -1244,7 +1244,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      context.pushNamed('age');
+                                                      context.pushNamed('AGE');
                                                     },
                                                     text: 'Create Account',
                                                     options: FFButtonOptions(
