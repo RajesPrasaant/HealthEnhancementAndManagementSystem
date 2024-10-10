@@ -187,7 +187,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                             Colors.transparent,
                                                         onTap: () async {
                                                           context.pushNamed(
-                                                              'blood_request');
+                                                              'blood_page');
                                                         },
                                                         child: const Icon(
                                                           Icons.favorite,
