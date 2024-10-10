@@ -9,30 +9,30 @@ class PersonalInfoModel extends FlutterFlowModel<PersonalInfoWidget> {
   FocusNode? fullnameFocusNode;
   TextEditingController? fullnameTextController;
   String? Function(BuildContext, String?)? fullnameTextControllerValidator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode1;
-  TextEditingController? textController2;
-  String? Function(BuildContext, String?)? textController2Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode2;
-  TextEditingController? textController3;
-  String? Function(BuildContext, String?)? textController3Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode3;
-  TextEditingController? textController4;
-  String? Function(BuildContext, String?)? textController4Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode4;
-  TextEditingController? textController5;
-  String? Function(BuildContext, String?)? textController5Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode5;
-  TextEditingController? textController6;
-  String? Function(BuildContext, String?)? textController6Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode6;
-  TextEditingController? textController7;
-  String? Function(BuildContext, String?)? textController7Validator;
+  // State field(s) for DOB widget.
+  FocusNode? dobFocusNode;
+  TextEditingController? dobTextController;
+  String? Function(BuildContext, String?)? dobTextControllerValidator;
+  // State field(s) for ph widget.
+  FocusNode? phFocusNode;
+  TextEditingController? phTextController;
+  String? Function(BuildContext, String?)? phTextControllerValidator;
+  // State field(s) for em widget.
+  FocusNode? emFocusNode;
+  TextEditingController? emTextController;
+  String? Function(BuildContext, String?)? emTextControllerValidator;
+  // State field(s) for streetadd widget.
+  FocusNode? streetaddFocusNode;
+  TextEditingController? streetaddTextController;
+  String? Function(BuildContext, String?)? streetaddTextControllerValidator;
+  // State field(s) for city widget.
+  FocusNode? cityFocusNode;
+  TextEditingController? cityTextController;
+  String? Function(BuildContext, String?)? cityTextControllerValidator;
+  // State field(s) for pincode widget.
+  FocusNode? pincodeFocusNode;
+  TextEditingController? pincodeTextController;
+  String? Function(BuildContext, String?)? pincodeTextControllerValidator;
 
   @override
   void initState(BuildContext context) {}
@@ -42,22 +42,22 @@ class PersonalInfoModel extends FlutterFlowModel<PersonalInfoWidget> {
     fullnameFocusNode?.dispose();
     fullnameTextController?.dispose();
 
-    textFieldFocusNode1?.dispose();
-    textController2?.dispose();
+    dobFocusNode?.dispose();
+    dobTextController?.dispose();
 
-    textFieldFocusNode2?.dispose();
-    textController3?.dispose();
+    phFocusNode?.dispose();
+    phTextController?.dispose();
 
-    textFieldFocusNode3?.dispose();
-    textController4?.dispose();
+    emFocusNode?.dispose();
+    emTextController?.dispose();
 
-    textFieldFocusNode4?.dispose();
-    textController5?.dispose();
+    streetaddFocusNode?.dispose();
+    streetaddTextController?.dispose();
 
-    textFieldFocusNode5?.dispose();
-    textController6?.dispose();
+    cityFocusNode?.dispose();
+    cityTextController?.dispose();
 
-    textFieldFocusNode6?.dispose();
-    textController7?.dispose();
+    pincodeFocusNode?.dispose();
+    pincodeTextController?.dispose();
   }
 }

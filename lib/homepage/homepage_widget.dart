@@ -332,15 +332,29 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                             BorderRadius
                                                                 .circular(30.0),
                                                       ),
-                                                      child: const Icon(
-                                                        Icons.medication,
-                                                        color:
-                                                            Color(0xFF64B5F6),
-                                                        size: 30.0,
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          context.pushNamed(
+                                                              'appoinment');
+                                                        },
+                                                        child: const Icon(
+                                                          Icons.medication,
+                                                          color:
+                                                              Color(0xFF64B5F6),
+                                                          size: 30.0,
+                                                        ),
                                                       ),
                                                     ),
                                                     Text(
-                                                      'Medication',
+                                                      'Book\n appoinments',
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: FlutterFlowTheme
@@ -357,76 +371,6 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                               ],
                                             ),
                                           ].divide(const SizedBox(height: 16.0)),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      context.pushNamed('appoinment');
-                                    },
-                                    child: Material(
-                                      color: Colors.transparent,
-                                      elevation: 2.0,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(16.0),
-                                      ),
-                                      child: Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.882,
-                                        height: 61.0,
-                                        decoration: BoxDecoration(
-                                          color: const Color(0xFFE0F7FA),
-                                          borderRadius:
-                                              BorderRadius.circular(16.0),
-                                        ),
-                                        child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 16.0, 16.0, 16.0),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: [
-                                              Text(
-                                                'Book  Appointments',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .headlineSmall
-                                                    .override(
-                                                      fontFamily: 'Inter Tight',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primaryText,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                    ),
-                                              ),
-                                              Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Container(
-                                                    decoration: BoxDecoration(
-                                                      color: const Color(0xFFE8F5E9),
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ].divide(const SizedBox(height: 16.0)),
-                                          ),
                                         ),
                                       ),
                                     ),

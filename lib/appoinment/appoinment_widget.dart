@@ -138,7 +138,7 @@ class _AppoinmentWidgetState extends State<AppoinmentWidget> {
                                   children: [
                                     Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.3,
+                                          0.374,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius:
@@ -177,46 +177,7 @@ class _AppoinmentWidgetState extends State<AppoinmentWidget> {
                                     ),
                                     Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.3,
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        border: Border.all(
-                                          color: const Color(0xFFE0E0E0),
-                                          width: 1.0,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            8.0, 12.0, 8.0, 12.0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Icon(
-                                              Icons.medical_services,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              size: 20.0,
-                                            ),
-                                            Text(
-                                              'Specialty',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodySmall
-                                                      .override(
-                                                        fontFamily: 'Inter',
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                            ),
-                                          ].divide(const SizedBox(width: 8.0)),
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      width: MediaQuery.sizeOf(context).width *
-                                          0.3,
+                                          0.377,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius:

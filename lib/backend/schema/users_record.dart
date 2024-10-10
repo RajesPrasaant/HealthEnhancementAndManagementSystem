@@ -55,10 +55,20 @@ class UsersRecord extends FirestoreRecord {
   String get city => _city ?? '';
   bool hasCity() => _city != null;
 
-  // "pincode" field.
-  int? _pincode;
-  int get pincode => _pincode ?? 0;
-  bool hasPincode() => _pincode != null;
+  // "fullname" field.
+  String? _fullname;
+  String get fullname => _fullname ?? '';
+  bool hasFullname() => _fullname != null;
+
+  // "DOB" field.
+  String? _dob;
+  String get dob => _dob ?? '';
+  bool hasDob() => _dob != null;
+
+  // "zipcode" field.
+  String? _zipcode;
+  String get zipcode => _zipcode ?? '';
+  bool hasZipcode() => _zipcode != null;
 
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
@@ -69,7 +79,9 @@ class UsersRecord extends FirestoreRecord {
     _phoneNumber = snapshotData['phone_number'] as String?;
     _streetadd = snapshotData['streetadd'] as String?;
     _city = snapshotData['city'] as String?;
-    _pincode = castToType<int>(snapshotData['pincode']);
+    _fullname = snapshotData['fullname'] as String?;
+    _dob = snapshotData['DOB'] as String?;
+    _zipcode = snapshotData['zipcode'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -114,7 +126,9 @@ Map<String, dynamic> createUsersRecordData({
   String? phoneNumber,
   String? streetadd,
   String? city,
-  int? pincode,
+  String? fullname,
+  String? dob,
+  String? zipcode,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -126,7 +140,9 @@ Map<String, dynamic> createUsersRecordData({
       'phone_number': phoneNumber,
       'streetadd': streetadd,
       'city': city,
-      'pincode': pincode,
+      'fullname': fullname,
+      'DOB': dob,
+      'zipcode': zipcode,
     }.withoutNulls,
   );
 
@@ -146,7 +162,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.streetadd == e2?.streetadd &&
         e1?.city == e2?.city &&
-        e1?.pincode == e2?.pincode;
+        e1?.fullname == e2?.fullname &&
+        e1?.dob == e2?.dob &&
+        e1?.zipcode == e2?.zipcode;
   }
 
   @override
@@ -159,7 +177,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.phoneNumber,
         e?.streetadd,
         e?.city,
-        e?.pincode
+        e?.fullname,
+        e?.dob,
+        e?.zipcode
       ]);
 
   @override
