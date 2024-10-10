@@ -1263,8 +1263,43 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      context
-                                                          .pushNamed('open1');
+                                                      GoRouter.of(context)
+                                                          .prepareAuthEvent();
+                                                      if (_model
+                                                              .passwordCreateTextController
+                                                              .text !=
+                                                          _model
+                                                              .passwordConfirmTextController
+                                                              .text) {
+                                                        ScaffoldMessenger.of(
+                                                                context)
+                                                            .showSnackBar(
+                                                          const SnackBar(
+                                                            content: Text(
+                                                              'Passwords don\'t match!',
+                                                            ),
+                                                          ),
+                                                        );
+                                                        return;
+                                                      }
+
+                                                      final user = await authManager
+                                                          .createAccountWithEmail(
+                                                        context,
+                                                        _model
+                                                            .emailAddressCreateTextController
+                                                            .text,
+                                                        _model
+                                                            .passwordCreateTextController
+                                                            .text,
+                                                      );
+                                                      if (user == null) {
+                                                        return;
+                                                      }
+
+                                                      context.goNamedAuth(
+                                                          'open1',
+                                                          context.mounted);
                                                     },
                                                     text: 'Create Account',
                                                     options: FFButtonOptions(

@@ -12,3 +12,4 @@ export '/mealpalns/mealpalns_widget.dart' show MealpalnsWidget;
 export '/settings_page/settings_page_widget.dart' show SettingsPageWidget;
 export '/personal_info/personal_info_widget.dart' show PersonalInfoWidget;
 export '/password_reset/password_reset_widget.dart' show PasswordResetWidget;
+export '/pages/age/age_widget.dart' show AgeWidget;

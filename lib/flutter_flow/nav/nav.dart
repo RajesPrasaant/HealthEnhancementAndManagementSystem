@@ -144,6 +144,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'password_reset',
           path: '/passwordReset',
           builder: (context, params) => const PasswordResetWidget(),
+        ),
+        FFRoute(
+          name: 'age',
+          path: '/age',
+          builder: (context, params) => const AgeWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
