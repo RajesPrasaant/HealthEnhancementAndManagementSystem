@@ -149,6 +149,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'genderSelect',
           path: '/genderSelect',
           builder: (context, params) => const GenderSelectWidget(),
+        ),
+        FFRoute(
+          name: 'blood_page',
+          path: '/bloodPage',
+          builder: (context, params) => const BloodPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
