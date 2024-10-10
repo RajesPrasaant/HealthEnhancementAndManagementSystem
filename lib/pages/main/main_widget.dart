@@ -1319,10 +1319,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
+                                                      color: const Color(0xFF1E90FF),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)

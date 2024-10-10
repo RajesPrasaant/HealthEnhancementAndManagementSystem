@@ -745,19 +745,20 @@ class _HomepageWidgetState extends State<HomepageWidget> {
               ],
             ),
             Align(
-              alignment: const AlignmentDirectional(0.9, -0.95),
-              child: FlutterFlowIconButton(
-                borderRadius: 8.0,
-                buttonSize: 39.0,
-                fillColor: const Color(0xFF4B39EF),
-                icon: const Icon(
-                  Icons.toc_outlined,
-                  color: Colors.white,
-                  size: 30.0,
+              alignment: const AlignmentDirectional(1.0, -1.0),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
+                child: FlutterFlowIconButton(
+                  borderRadius: 8.0,
+                  buttonSize: 39.0,
+                  fillColor: const Color(0xFF99DBDB),
+                  icon: const Icon(
+                    Icons.toc_outlined,
+                    color: Colors.white,
+                    size: 30.0,
+                  ),
+                  onPressed: () async {},
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
-                },
               ),
             ),
             Opacity(
