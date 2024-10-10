@@ -43,7 +43,7 @@ class _MealpalnsWidgetState extends State<MealpalnsWidget> {
             children: [
               Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
-                height: 200.0,
+                height: 84.0,
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF4B39EF), Color(0xFF39D2C0)],

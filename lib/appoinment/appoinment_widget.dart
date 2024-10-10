@@ -44,7 +44,7 @@ class _AppoinmentWidgetState extends State<AppoinmentWidget> {
             children: [
               Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
-                height: 180.0,
+                height: 114.0,
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Color(0xFF4B39EF), Color(0xFF39D2C0)],
@@ -579,7 +579,7 @@ class _AppoinmentWidgetState extends State<AppoinmentWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Dr.Ajay Shankar',
+                                            'Dr.Selvam',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(

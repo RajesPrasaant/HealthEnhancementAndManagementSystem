@@ -13,3 +13,6 @@ export '/personal_info/personal_info_widget.dart' show PersonalInfoWidget;
 export '/password_reset/password_reset_widget.dart' show PasswordResetWidget;
 export '/pages/age/age_widget.dart' show AgeWidget;
 export '/gender_select/gender_select_widget.dart' show GenderSelectWidget;
+export '/blood_request/blood_request_widget.dart' show BloodRequestWidget;
+export '/blood_page/blood_page_widget.dart' show BloodPageWidget;
+export '/blood_donnation/blood_donnation_widget.dart' show BloodDonnationWidget;

@@ -141,7 +141,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const PasswordResetWidget(),
         ),
         FFRoute(
-          name: 'age',
+          name: 'AGE',
           path: '/age',
           builder: (context, params) => const AgeWidget(),
         ),
@@ -149,6 +149,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'genderSelect',
           path: '/genderSelect',
           builder: (context, params) => const GenderSelectWidget(),
+        ),
+        FFRoute(
+          name: 'blood_request',
+          path: '/bloodRequest',
+          builder: (context, params) => const BloodRequestWidget(),
+        ),
+        FFRoute(
+          name: 'blood_page',
+          path: '/bloodPage',
+          builder: (context, params) => const BloodPageWidget(),
+        ),
+        FFRoute(
+          name: 'blood_donnation',
+          path: '/bloodDonnation',
+          builder: (context, params) => const BloodDonnationWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

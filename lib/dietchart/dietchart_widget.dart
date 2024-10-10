@@ -52,7 +52,7 @@ class _DietchartWidgetState extends State<DietchartWidget> {
               children: [
                 Container(
                   width: MediaQuery.sizeOf(context).width * 1.0,
-                  height: 200.0,
+                  height: 86.0,
                   decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [Color(0xFF4B39EF), Color(0xFF39D2C0)],
