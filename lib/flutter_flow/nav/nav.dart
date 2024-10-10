@@ -72,13 +72,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const Open1Widget() : const MainWidget(),
+          appStateNotifier.loggedIn ? const HomepageWidget() : const MainWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const Open1Widget() : const MainWidget(),
+              appStateNotifier.loggedIn ? const HomepageWidget() : const MainWidget(),
         ),
         FFRoute(
           name: 'open1',
@@ -99,11 +99,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'main',
           path: '/main',
           builder: (context, params) => const MainWidget(),
-        ),
-        FFRoute(
-          name: 'gender',
-          path: '/gender',
-          builder: (context, params) => const GenderWidget(),
         ),
         FFRoute(
           name: 'lab_results',
@@ -149,6 +144,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'age',
           path: '/age',
           builder: (context, params) => const AgeWidget(),
+        ),
+        FFRoute(
+          name: 'genderSelect',
+          path: '/genderSelect',
+          builder: (context, params) => const GenderSelectWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

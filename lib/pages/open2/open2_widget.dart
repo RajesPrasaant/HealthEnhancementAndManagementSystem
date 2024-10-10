@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'open2_model.dart';
@@ -23,6 +24,9 @@ class _Open2WidgetState extends State<Open2Widget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => Open2Model());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {});
   }
 
   @override
