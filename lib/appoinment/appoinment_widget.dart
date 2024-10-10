@@ -579,7 +579,7 @@ class _AppoinmentWidgetState extends State<AppoinmentWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Dr. Michael Johnson',
+                                            'Dr.Ajay Shankar',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
