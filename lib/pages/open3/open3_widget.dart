@@ -48,16 +48,25 @@ class _Open3WidgetState extends State<Open3Widget> {
                 alignment: const AlignmentDirectional(1.0, -1.0),
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 45.0, 0.0),
-                  child: Text(
-                    'SKIP',
-                    textAlign: TextAlign.start,
-                    style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily: 'Inter',
-                          color: const Color(0xFFEFEDED),
-                          fontSize: 20.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('homepage');
+                    },
+                    child: Text(
+                      'SKIP',
+                      textAlign: TextAlign.start,
+                      style: FlutterFlowTheme.of(context).bodyLarge.override(
+                            fontFamily: 'Inter',
+                            color: const Color(0xFFEFEDED),
+                            fontSize: 20.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
                   ),
                 ),
               ),

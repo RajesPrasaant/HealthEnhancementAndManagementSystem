@@ -766,21 +766,6 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                 ),
               ),
             ),
-            Opacity(
-              opacity: 0.6,
-              child: Align(
-                alignment: const AlignmentDirectional(0.0, 0.81),
-                child: Text(
-                  'By using the Health Enhancement Management System app, you agree to our Terms and Conditions, which outline your responsibilities in managing your health information and using the app\'s features. Always seek professional medical advice for any health-related concerns. For more details, please review our full Terms and Conditions.',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Inter',
-                        color: FlutterFlowTheme.of(context).primaryText,
-                        letterSpacing: 0.0,
-                      ),
-                ),
-              ),
-            ),
           ],
         ),
       ),

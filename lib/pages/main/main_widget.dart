@@ -506,27 +506,8 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      GoRouter.of(context)
-                                                          .prepareAuthEvent();
-
-                                                      final user =
-                                                          await authManager
-                                                              .signInWithEmail(
-                                                        context,
-                                                        _model
-                                                            .emailAddressTextController
-                                                            .text,
-                                                        _model
-                                                            .passwordTextController
-                                                            .text,
-                                                      );
-                                                      if (user == null) {
-                                                        return;
-                                                      }
-
-                                                      context.goNamedAuth(
-                                                          'homepage',
-                                                          context.mounted);
+                                                      context
+                                                          .pushNamed('open1');
                                                     },
                                                     text: 'Sign In',
                                                     options: FFButtonOptions(
@@ -913,6 +894,8 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                         .emailAddressCreateTextController,
                                                     focusNode: _model
                                                         .emailAddressCreateFocusNode,
+                                                    onFieldSubmitted:
+                                                        (_) async {},
                                                     autofocus: true,
                                                     autofillHints: const [
                                                       AutofillHints.email
@@ -1015,6 +998,8 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                         .passwordCreateTextController,
                                                     focusNode: _model
                                                         .passwordCreateFocusNode,
+                                                    onFieldSubmitted:
+                                                        (_) async {},
                                                     autofocus: false,
                                                     autofillHints: const [
                                                       AutofillHints.password
@@ -1139,6 +1124,8 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                         .passwordConfirmTextController,
                                                     focusNode: _model
                                                         .passwordConfirmFocusNode,
+                                                    onFieldSubmitted:
+                                                        (_) async {},
                                                     autofocus: false,
                                                     autofillHints: const [
                                                       AutofillHints.password
@@ -1263,8 +1250,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      context
-                                                          .pushNamed('open1');
+                                                      context.pushNamed('age');
                                                     },
                                                     text: 'Create Account',
                                                     options: FFButtonOptions(
